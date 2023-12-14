@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platformer Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="changeCharacters">
+        <h1 align="center">PLATFORMER GAME</h1>
+        <h2 align="center">Choose a characters</h2>
+        <div class="grid-init grid">
+            <a href="#game" onclick="dino()">
+                <img src="img/dino.png" class="box-init box photoCharacter"></a>
+            <a href="#game" onclick="king()">
+                <img src="img/king.png" class="box-init box photoCharacter"></a>
+            <a href="#game" onclick="cat()">
+                <img src="img/cat.png" class="box-init box photoCharacter"></a>
+            <a href="#game" onclick="ghost()">
+                <img src="img/ghost.png" class="box-init box photoCharacter"></a>
+            <a href="#game" onclick="rabbit()">
+                <img src="img/rabbit.png" class="box-init box photoCharacter"></a>
+            <a href="#game" onclick="sheep()">
+                <img src="img/sheep.png" class="box-init box photoCharacter"></a>
+            <a href="#game" onclick="hedgehog()">
+                <img src="img/hedgehog.png" class="box-init box photoCharacter"></a>
+            <a href="#game" onclick="hamster()">
+                <img src="img/hamster.png" class="box-init box photoCharacter"></a>
+        </div>
+    </section>
+    <section id="game">
+        <div class="game">
+            <div id="character"></div>
+            <div id="cactus"></div>
+        </div>
+        <div class="game">
+            <div id="character2"></div>
+            <div id="cactus2"></div>
+        </div>
+        <h2 align="center" id="textStart">Press any key to start the game</h2>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
