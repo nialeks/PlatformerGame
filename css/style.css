@@ -1,0 +1,122 @@
+#changeCharacters {
+    height: 100vh;
+}
+h2 {
+    animation: animationText 1s infinite linear;
+}
+.startGame {
+    color: white;
+}
+@keyframes animationText {
+    0% {
+        color: white;
+    }
+    50% {
+        color: grey;
+    }
+    100% {
+        color: white;
+    }
+}
+.grid-init {
+    max-width: 40%;
+    margin: auto; 
+    padding: 10px; 
+}
+.box-init {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+}
+@media screen and (max-width:900px){
+    .grid{grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+}
+.photoCharacter {
+    width: 100%;
+    height: 100%;
+}
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1.5px solid black;
+    margin: auto;
+}
+#game {
+    height: 100vh;
+}
+#character {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/dino.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+#character2 {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/dino.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(../img/cactus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactusMove 2s infinite linear;
+}
+#cactus2 {
+    width: 20px;
+    height: 40px;
+    background-image: url(../img/cactus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactusMove 3s infinite linear;
+}
+/* Ключевые кадры анимации кактуса*/
+@keyframes cactusMove {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+.jump {
+    animation: jump 0.4s linear;
+}
+/* Ключевые кадры анимации прыжка*/
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 110px;
+    }
+    50% {
+        top: 70px;
+    }
+    70%{
+        top: 110px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
